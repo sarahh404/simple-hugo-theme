@@ -1,1 +1,12 @@
-{{ define "main" }} {{ .Content }} {{ end }}
+{{ define "main" }}
+	<main>
+		{{ .Content }}
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ range $paginator.Pages }}
+            {{ .Render "summary" }}
+            <br />
+		{{ end }}
+		{{ partial "pagination.html" . }}
+		<br />
+	</main>
+{{ end }}
