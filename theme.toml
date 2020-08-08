@@ -6,7 +6,7 @@ license = "MIT"
 licenselink = "https://github.com/crhide/simple-hugo-theme/blob/master/LICENSE"
 description = ""
 homepage = "http://crhide.co.uk"
-tags = []
+tags = ["minimal"]
 features = []
 min_version = "0.41.0"
 

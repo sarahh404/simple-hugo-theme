@@ -1,7 +1,13 @@
-<nav class="header-nav">
+<header class="flex">
+  {{if (isset .Site.Params "gravatar")}}
+  <img
+    src="https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar }}?s=100"
+  />
+  {{end}}
+  <nav>
+    <h1>{{ .Site.Title }}</h1>
     {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}" title="{{ .Title }}">
-        {{- .Name -}}
-        </a>
+    <a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
     {{ end }}
-</nav>  
+  </nav>
+</header>

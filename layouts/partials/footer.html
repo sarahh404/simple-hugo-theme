@@ -1,1 +1,13 @@
-
+<footer class="flex">
+  <div class="left">
+    Copyright {{ .Site.Author.name }} &copy; {{ now.Format "2006" }}
+  </div>
+  <div class="fill"></div>
+  <div class="right">
+    <nav>
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>
+      {{ end }}
+    </nav>
+  </div>
+</footer>

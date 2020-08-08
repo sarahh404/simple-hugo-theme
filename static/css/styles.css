@@ -1,9 +1,49 @@
 body {
-    font-family: Consolas,monaco,monospace;
-    padding: 15px;
+  font-family: Consolas, monaco, monospace;
+  padding: 15px;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-.header-nav {
-    padding: 5px;
-    background-color: forestgreen;
+header {
+  margin-bottom: 20px;
+}
+
+header > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+header > nav {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 15px;
+  align-items: top;
+}
+
+header > nav,
+h1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+header > nav > a {
+  padding: 5px;
+  border-left: 5px solid forestgreen;
+  padding-left: 5px;
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.fill {
+  flex-grow: 1;
 }
