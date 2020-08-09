@@ -1,8 +1,5 @@
 <article>
     <p><a href="{{ .Permalink }}">{{ .Title }}</a> / <time>{{ .Date.Format "2006-01-02 15:04:05" }}</time></p>
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
 	<div>
 		{{ .Summary }}
 		{{ if .Truncated }}
