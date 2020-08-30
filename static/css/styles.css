@@ -44,6 +44,10 @@ header > nav > a {
   display: flex;
 }
 
-.fill {
+.fill {https://www.duolingo.com/profile/crhide
   flex-grow: 1;
+}
+
+img {
+  max-width: 80%;
 }
