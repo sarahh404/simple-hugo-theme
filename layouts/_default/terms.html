@@ -1,8 +1,9 @@
 {{ define "main" }}
 <h1>{{.Title}}</h1>
 <article>
-  {{.Content}} {{ range .Data.Terms.Alphabetical }}
+  {{.Content}}
   <ul>
+    {{ range .Data.Terms.Alphabetical }}
     <li>
       <p>
         <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> / {{ .Count }}
